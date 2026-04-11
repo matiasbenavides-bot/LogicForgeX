@@ -907,6 +907,24 @@ const extrasByType = {
     container.appendChild(div);
   });
   }
+  function sel(key, val) {
+  S[key] = val;
+
+  document.querySelectorAll(`[id^="${key}-"]`).forEach(e => e.classList.remove('selected'));
+  document.getElementById(`${key}-${val}`).classList.add('selected');
+
+  if (key === 'type') {
+    document.getElementById('btnStep1').disabled = false;
+
+    // 🔥 IMPORTANTE: regenerar extras según tipo
+    S.extras = []; // reset extras al cambiar tipo
+    renderExtras();
+  }
+
+  if (key === 'complexity') {
+    document.getElementById('btnStep2').disabled = false;
+  }
+  }
 </script>
 </body>
 </html>
