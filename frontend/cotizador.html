@@ -470,6 +470,13 @@
   ::-webkit-scrollbar { width:5px; }
   ::-webkit-scrollbar-track { background:var(--bg); }
   ::-webkit-scrollbar-thumb { background:var(--border2); border-radius:3px; }
+  .toggle-grid:has(.toggle-item:only-child) {
+  grid-template-columns: 1fr;
+}
+
+.toggle-grid:has(.toggle-item:nth-child(2):last-child) {
+  grid-template-columns: 1fr;
+}
 </style>
 </head>
 <body>
@@ -722,7 +729,11 @@
     admin:    { label:'Panel admin',    addMin:150000, addMax:300000 },
     auto:     { label:'Automatizaciones', addMin:50000, addMax:150000 }
   };
-
+const extrasByType = {
+  landing: ['auto'],
+  ecommerce: ['catalogo','pagos','admin','auto'],
+  sistema: ['admin','auto']
+};
   const PAGE_ADD_MIN = 20000;
   const PAGE_ADD_MAX = 50000;
   const IVA = 0.19;
@@ -869,6 +880,33 @@
   }
 
   updateSlider();
+  function renderExtras() {
+  const container = document.getElementById('extrasContainer');
+  if (!container) return;
+
+  container.innerHTML = '';
+
+  const list = extrasByType[S.type] || [];
+
+  list.forEach(id => {
+    const e = extras[id];
+
+    const div = document.createElement('div');
+    div.className = 'toggle-item';
+    div.id = `extra-${id}`;
+    div.onclick = () => togExtra(id);
+
+    div.innerHTML = `
+      <div class="toggle-check" id="chk-${id}"></div>
+      <div>
+        <div class="toggle-name">${e.label}</div>
+        <div class="toggle-price">${fmtRange(e.addMin, e.addMax)}</div>
+      </div>
+    `;
+
+    container.appendChild(div);
+  });
+  }
 </script>
 </body>
 </html>
