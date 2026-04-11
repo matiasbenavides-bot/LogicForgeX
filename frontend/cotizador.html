@@ -925,6 +925,74 @@ const extrasByType = {
     document.getElementById('btnStep2').disabled = false;
   }
   }
+  const step3Features = {
+  landing: [
+    { id: 'seo', label: 'SEO básico' },
+    { id: 'whatsapp', label: 'Botón WhatsApp' },
+    { id: 'analytics', label: 'Google Analytics' }
+  ],
+
+  ecommerce: [
+    { id: 'carrito', label: 'Carrito avanzado' },
+    { id: 'stock', label: 'Control de stock' },
+    { id: 'pagos_multi', label: 'Múltiples medios de pago' },
+    { id: 'envios', label: 'Cálculo de envíos' }
+  ],
+
+  sistema: [
+    { id: 'roles', label: 'Sistema de roles' },
+    { id: 'api', label: 'API interna' },
+    { id: 'logs', label: 'Logs y auditoría' }
+  ]
+};
+  S.features = [];
+  function renderStep3() {
+  const container = document.getElementById('step3Container');
+  if (!container) return;
+
+  container.innerHTML = '';
+
+  const list = step3Features[S.type] || [];
+
+  list.forEach(f => {
+    const div = document.createElement('div');
+    div.className = 'toggle-item';
+    div.id = `feature-${f.id}`;
+
+    div.onclick = () => toggleFeature(f.id);
+
+    div.innerHTML = `
+      <div class="toggle-check" id="chk-feature-${f.id}"></div>
+      <div>
+        <div class="toggle-name">${f.label}</div>
+      </div>
+    `;
+
+    container.appendChild(div);
+  });
+  }
+  function toggleFeature(id) {
+  const idx = S.features.indexOf(id);
+
+  if (idx > -1) {
+    S.features.splice(idx, 1);
+    document.getElementById(`feature-${id}`).classList.remove('selected');
+    document.getElementById(`chk-feature-${id}`).textContent = '';
+  } else {
+    S.features.push(id);
+    document.getElementById(`feature-${id}`).classList.add('selected');
+    document.getElementById(`chk-feature-${id}`).textContent = '✓';
+  }
+  }
+  if (key === 'type') {
+  document.getElementById('btnStep1').disabled = false;
+
+  S.extras = [];
+  S.features = [];   // 🔥 reset nuevo módulo
+
+  renderExtras();
+  renderStep3();     // 🔥 clave
+  }
 </script>
 </body>
 </html>
