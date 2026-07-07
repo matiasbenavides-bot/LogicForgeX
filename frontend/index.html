@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CL">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>LogicForgeX | La plataforma que tu negocio necesita, sin pagar por lo que no usa</title>
-<meta name="description" content="LFXCORE es una plataforma empresarial modular: activa solo los pilares que tu negocio necesita (ventas, agenda, proyectos, y más). Sin sistemas a medida desde cero, sin pagar por funciones que no usas.">
-<meta property="og:title" content="LogicForgeX — Plataforma empresarial modular por pilares">
-<meta property="og:description" content="Activa solo lo que tu negocio necesita. La misma base sólida, combinada distinto para cada tipo de empresa.">
+<title>LFXCORE | El ERP chileno que reemplaza su contador y su Excel</title>
+<meta name="description" content="ERP chileno con facturación electrónica directo al SII, Webpay, F29, LCV y 25 pilares de negocio. Desde 1.2 UF/mes. Sin costo por usuario adicional.">
+<meta property="og:title" content="LFXCORE — ERP chileno con DTE, Webpay, F29 y LCV">
+<meta property="og:description" content="Facturación electrónica directo al SII. Webpay nativo. F29 y LCV automáticos. Desde 1.2 UF/mes. 9 packs por rubro.">
 <meta name="theme-color" content="#04020f">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -558,6 +558,7 @@ footer{border-top:1px solid var(--border);padding:50px 0 30px;position:relative;
 .scroll-top{position:fixed;bottom:20px;right:20px;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--violet),var(--blue));color:#fff;display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:0 8px 24px rgba(139,92,246,.4);z-index:90;opacity:0;visibility:hidden;transition:opacity .3s var(--easing), visibility .3s var(--easing), transform .3s var(--easing);}
 .scroll-top.show{opacity:1;visibility:visible;}
 .scroll-top:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(139,92,246,.6);}
+
 </style>
 </head>
 <body>
@@ -566,26 +567,26 @@ footer{border-top:1px solid var(--border);padding:50px 0 30px;position:relative;
   <nav class="nav">
     <a class="nav-logo" href="#inicio">
       <span class="dot"></span>
-      LogicForgeX<span
+      LogicForgeX<span class="x"></span>
     </a>
     <div class="nav-links">
-      <a href="#pilares">Pilares</a>
-      <a href="#diseno">Cómo funciona</a>
+      <a href="#precios">Precios</a>
+      <a href="#chile">¿Por qué Chile?</a>
+      <a href="#packs">Packs</a>
       <a href="#proceso">Proceso</a>
-      <a href="#plan">Plan</a>
       <a href="#faq">FAQ</a>
     </div>
-    <a href="#contacto" class="nav-cta">Conversemos →</a>
+    <a href="#contacto" class="nav-cta">Hablemos →</a>
     <button class="ham" id="ham" aria-label="Menú">
       <span></span><span></span><span></span>
     </button>
     <div class="mob-menu" id="mobMenu">
-      <a href="#pilares"  onclick="closeMenu()">Pilares</a>
-      <a href="#diseno"   onclick="closeMenu()">Cómo funciona</a>
+      <a href="#precios"  onclick="closeMenu()">Precios</a>
+      <a href="#chile"    onclick="closeMenu()">¿Por qué Chile?</a>
+      <a href="#packs"    onclick="closeMenu()">Packs</a>
       <a href="#proceso"  onclick="closeMenu()">Proceso</a>
-      <a href="#plan"     onclick="closeMenu()">Plan</a>
       <a href="#faq"      onclick="closeMenu()">FAQ</a>
-      <a href="#contacto" onclick="closeMenu()" class="mob-cta">Conversemos →</a>
+      <a href="#contacto" onclick="closeMenu()" class="mob-cta">Hablemos →</a>
     </div>
   </nav>
 </header>
@@ -596,68 +597,65 @@ footer{border-top:1px solid var(--border);padding:50px 0 30px;position:relative;
   <div class="hero-inner">
     <div class="hero-grid">
       <div>
-        <div class="tag reveal">LFXCORE · Plataforma empresarial modular</div>
+        <div class="tag reveal">ERP chileno · Hecho para el SII, no traducido</div>
         <h1 class="hero-h1 reveal">
-          El sistema se adapta a tu negocio.
-          <span class="grad">No al revés.</span>
+          El ERP que reemplaza su contador,<br>
+          <span class="grad">su Excel y su sistema actual.</span>
         </h1>
         <p class="hero-p reveal">
-          LFXCORE es una plataforma compuesta por <strong>pilares</strong>: ventas, agenda y trabajos,
-          proyectos, y más. Activas solo los que tu negocio necesita — nada de pagar por funciones
-          que nunca vas a usar, ni esperar meses por un sistema hecho desde cero.
+          Facturación electrónica <strong>directo al SII</strong> sin APIs de terceros. 
+          Webpay, F29, LCV, 40 horas y finiquitos chilenos. Todo incluido desde 
+          <strong>1.2 UF/mes</strong> Sin costo por usuario adicional.
         </p>
         <div class="hero-btns reveal">
-          <a href="#pilares" class="btn-p"><span>Ver los pilares →</span></a>
-          <a href="#diseno" class="btn-s">Cómo funciona</a>
+          <a href="#precios" class="btn-p"><span>Ver precios →</span></a>
+          <a href="#chile" class="btn-s">¿Por qué Chile?</a>
         </div>
         <div class="hero-meta reveal">
-          <span><span class="ok">●</span> Activa solo lo que necesitas</span>
-          <span><span class="ok">●</span> Crece agregando pilares, no reescribiendo todo</span>
+          <span><span class="ok">●</span> DTE con firma P12 · envío directo al SII</span>
+          <span><span class="ok">●</span> Webpay + F29 + LCV incluidos</span>
         </div>
       </div>
 
       <div class="hero-mock reveal-scale" aria-hidden="true">
         <div class="mock-bar">
           <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-          <span class="url">tu-negocio.cl/admin</span>
+          <span class="url">app.lfxcore.cl/dashboard</span>
         </div>
         <div class="mock-body">
           <div class="mock-side">
-            <div class="mock-side-item active">▸ Commerce</div>
-            <div class="mock-side-item">Services</div>
-            <div class="mock-side-item">Business</div>
-            <div class="mock-side-item">Reportes</div>
-            <div class="mock-side-item">Equipo</div>
+            <div class="mock-side-item active">▸ DTE</div>
+            <div class="mock-side-item">Finanzas</div>
+            <div class="mock-side-item">CRM</div>
+            <div class="mock-side-item">RRHH</div>
+            <div class="mock-side-item">Logística</div>
             <div class="mock-side-item">Ajustes</div>
           </div>
           <div class="mock-main">
             <div class="mock-stats">
               <div class="mock-stat">
                 <div class="mock-stat-num" data-target="142" data-suffix="">0</div>
-                <div class="mock-stat-label">Órdenes</div>
+                <div class="mock-stat-label">Facturas emitidas</div>
               </div>
               <div class="mock-stat">
                 <div class="mock-stat-num" data-target="38" data-suffix="">0</div>
-                <div class="mock-stat-label">Citas hoy</div>
+                <div class="mock-stat-label">F29 al día</div>
               </div>
               <div class="mock-stat">
-                <div class="mock-stat-num" data-target="1.2" data-suffix="M" data-prefix="$" data-decimals="1">$0</div>
-                <div class="mock-stat-label">Ingresos</div>
+                <div class="mock-stat-num" data-target="2.8" data-suffix="M" data-prefix="" data-decimals="1">0</div>
+                <div class="mock-stat-label">Cobrado Webpay</div>
               </div>
             </div>
             <div class="mock-chart">
-              <div class="mock-bar-chart"></div>
-              <div class="mock-bar-chart"></div>
-              <div class="mock-bar-chart"></div>
-              <div class="mock-bar-chart"></div>
-              <div class="mock-bar-chart"></div>
-              <div class="mock-bar-chart"></div>
+              <div class="mock-bar-chart"></div><div class="mock-bar-chart"></div>
+              <div class="mock-bar-chart"></div><div class="mock-bar-chart"></div>
+              <div class="mock-bar-chart"></div><div class="mock-bar-chart"></div>
               <div class="mock-bar-chart"></div>
             </div>
             <div class="mock-rows">
-              <div class="mock-row"><span>#ORD-2847</span><span>$48.900</span></div>
-              <div class="mock-row"><span>Cita 16:30</span><span>Confirmada</span></div>
-              <div class="mock-row"><span>#ORD-2845</span><span>$87.300</span></div>
+              <div class="mock-row"><span>DTE #2847</span><span>Enviado SII</span></div>
+              <div class="mock-row"><span>F29 Julio</span><span>$342.800 IVA</span></div>
+              <div class="mock-row"><span>Webpay</span><span>$87.300</span></div>
             </div>
           </div>
         </div>
@@ -669,224 +667,125 @@ footer{border-top:1px solid var(--border);padding:50px 0 30px;position:relative;
 <section class="stats-bar reveal">
   <div class="stats-grid">
     <div class="stat-item">
-      <div class="stat-num" data-target="7" data-suffix="">0</div>
-      <div class="stat-label">Pilares disponibles</div>
+      <div class="stat-num" data-target="25" data-suffix="">0</div>
+      <div class="stat-label">Pilares de negocio</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num" data-target="100" data-suffix="%">0%</div>
-      <div class="stat-label">Activas lo que usas</div>
+      <div class="stat-num" data-target="9" data-suffix="">0</div>
+      <div class="stat-label">Packs por rubro</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num" data-target="24" data-suffix="/7">0/7</div>
-      <div class="stat-label">Infra activa</div>
+      <div class="stat-num" data-target="162" data-suffix="">0</div>
+      <div class="stat-label">Módulos backend</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num" data-target="0" data-suffix="" data-prefix="$">$0</div>
-      <div class="stat-label">Costos ocultos</div>
+      <div class="stat-num" data-target="0" data-suffix="" data-prefix="">0</div>
+      <div class="stat-label">Costo por usuario extra</div>
     </div>
   </div>
 </section>
 
-<section id="pilares" class="pillars">
+<section id="precios" class="pillars">
   <div class="wrap">
-    <div class="tag reveal">Las piezas, no trajes a medida</div>
-    <h2 class="h2 reveal">Piezas de Lego, <span class="grad">no un traje desde cero.</span></h2>
+    <div class="tag reveal">Precios transparentes</div>
+    <h2 class="h2 reveal">9 packs por rubro. <span class="grad">Sin letra pequeña.</span></h2>
     <p class="lead reveal">
-      No construimos un software distinto para cada tipo de negocio. Construimos piezas sólidas
-      y probadas — cada negocio activa la combinación que necesita.
+      Todos los packs incluyen DTE, Webpay, F29, LCV, Finanzas NIIF y Normativa Chilena.
+      Elige el que se ajusta a su industria. Sin costo por usuario adicional. Sin permanencia forzosa.<br>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--dim);">* Los precios son en UF. Se factura en UF del día. La conversión a CLP varía según el valor de la UF al momento del pago.</span>
     </p>
 
-    <div class="pillars-grid stagger">
-      <div class="pillar-card">
-        <span class="picon">🛒</span>
-        <div class="pname">Commerce</div>
-        <div class="pdesc">Comprar, vender y controlar inventario</div>
-      </div>
-      <div class="pillar-card">
-        <span class="picon">🗓️</span>
-        <div class="pname">Services</div>
-        <div class="pdesc">Agendar, ejecutar y cobrar trabajos</div>
-      </div>
-      <div class="pillar-card">
-        <span class="picon">📁</span>
-        <div class="pname">Business</div>
-        <div class="pdesc">Clientes, proyectos y seguimiento</div>
-      </div>
-      <div class="pillar-card">
-        <span class="picon">🚚</span>
-        <div class="pname">Operations</div>
-        <div class="pdesc">Producción, logística y flotas</div>
-      </div>
+    <div class="pillars-grid stagger" style="grid-template-columns:repeat(3,1fr);">
+      <div class="pillar-card"><span class="picon">🥇</span><div class="pname">Micro Lite</div><div class="pdesc">Solo facturar. DTE + F29 automático.<br><strong style="color:var(--cyan);">1.2 UF</strong></div></div>
+      <div class="pillar-card"><span class="picon">🥈</span><div class="pname">Micro</div><div class="pdesc">Emprendedor. DTE + F29 + CRM.<br><strong style="color:var(--cyan);">1.8 UF</strong></div></div>
+      <div class="pillar-card"><span class="picon">🏢</span><div class="pname">Inmobiliario</div><div class="pdesc">Propiedades, contratos, arriendos.<br><strong style="color:var(--cyan);">4.0 UF</strong></div></div>
     </div>
-    <div class="pillars-grid row2 stagger">
-      <div class="pillar-card">
-        <span class="picon">🎓</span>
-        <div class="pname">Education</div>
-        <div class="pdesc">Alumnos, cursos y certificaciones</div>
-      </div>
-      <div class="pillar-card">
-        <span class="picon">🩺</span>
-        <div class="pname">Healthcare</div>
-        <div class="pdesc">Pacientes e historial clínico</div>
-      </div>
-      <div class="pillar-card">
-        <span class="picon">🎟️</span>
-        <div class="pname">Membership</div>
-        <div class="pdesc">Miembros, planes y beneficios</div>
-      </div>
-      <div class="pillar-card core-note">
-        <span class="pname">Core</span>
-        <span class="pdesc">La base común a todos los pilares: usuarios, permisos y seguridad. Siempre presente, nunca se ve, nunca se cobra por separado.</span>
-      </div>
+    <div class="pillars-grid stagger" style="grid-template-columns:repeat(3,1fr);margin-top:0;">
+      <div class="pillar-card"><span class="picon">💰</span><div class="pname">Cobranza</div><div class="pdesc">Factoring, deudores, convenios.<br><strong style="color:var(--cyan);">4.0 UF</strong></div></div>
+      <div class="pillar-card"><span class="picon">🏗️</span><div class="pname">Constructor</div><div class="pdesc">Proyectos, OT, bodegas, SLA.<br><strong style="color:var(--cyan);">4.5 UF</strong></div></div>
+      <div class="pillar-card"><span class="picon">🏥</span><div class="pname">Clínica</div><div class="pdesc">Pacientes, citas, ficha clínica.<br><strong style="color:var(--cyan);">4.5 UF</strong></div></div>
+    </div>
+    <div class="pillars-grid stagger" style="grid-template-columns:repeat(3,1fr);margin-top:0;">
+      <div class="pillar-card"><span class="picon">🎓</span><div class="pname">Instituto</div><div class="pdesc">Cursos, estudiantes, matrículas.<br><strong style="color:var(--cyan);">4.5 UF</strong></div></div>
+      <div class="pillar-card"><span class="picon">🛒</span><div class="pname">Ferretero</div><div class="pdesc">Tienda, retail, e-commerce.<br><strong style="color:var(--cyan);">5.5 UF</strong></div></div>
+      <div class="pillar-card"><span class="picon">🏭</span><div class="pname">Industrial</div><div class="pdesc">Fábrica, CMMS, EHS, QMS.<br><strong style="color:var(--cyan);">5.5 UF</strong></div></div>
+    </div>
+
+    <div class="pillar-card core-note" style="margin-top:20px;">
+      <span class="picon">👑</span>
+      <span class="pname">Enterprise — 8.9 UF</span>
+      <span class="pdesc">Empresa grande (20+ empleados). Los 25 pilares. Usuarios y transacciones ilimitadas. Soporte 4h, implementación personalizada, capacitación 8h, SLA 99.5%.</span>
     </div>
   </div>
 </section>
 
-<section id="incluye" class="what">
-  <div class="wrap">
-    <div class="tag reveal">Lo mismo, combinado distinto</div>
-    <h2 class="h2 reveal">Cada negocio activa <span class="grad">su propia combinación.</span></h2>
-    <p class="lead reveal">
-      Un taller no es lo mismo que una barbería, y una barbería no es lo mismo que una ferretería —
-      pero los tres pueden construirse combinando las mismas piezas, sin que ninguno cargue con algo que no necesita.
-    </p>
-
-    <div class="compose-grid stagger">
-
-      <div class="compose-card">
-        <div class="cbiz">🔧 Taller mecánico</div>
-        <div class="compose-chips">
-          <span class="cchip core">Core</span>
-          <span class="cchip on">Commerce</span>
-          <span class="cchip on">Services</span>
-          <span class="cchip ext">+ extensión Automotive</span>
-        </div>
-        <p>Vende repuestos con Commerce y agenda mantenciones con Services. La extensión Automotive agrega lo específico: patentes, modelos, kilometraje.</p>
-      </div>
-
-      <div class="compose-card">
-        <div class="cbiz">💇 Barbería</div>
-        <div class="compose-chips">
-          <span class="cchip core">Core</span>
-          <span class="cchip on">Services</span>
-        </div>
-        <p>Solo necesita agendar horas, asignar barberos y cobrar. No paga ni carga con un módulo de inventario que nunca usaría.</p>
-      </div>
-
-      <div class="compose-card">
-        <div class="cbiz">🏪 Ferretería</div>
-        <div class="compose-chips">
-          <span class="cchip core">Core</span>
-          <span class="cchip on">Commerce</span>
-        </div>
-        <p>Solo vende productos físicos. Commerce solo le basta — sin agenda, sin proyectos, sin nada que no necesite.</p>
-      </div>
-
-      <div class="compose-card">
-        <div class="cbiz">📊 Consultora</div>
-        <div class="compose-chips">
-          <span class="cchip core">Core</span>
-          <span class="cchip on">Business</span>
-        </div>
-        <p>Gestiona clientes, proyectos y documentos. No vende productos ni agenda citas — necesita Business.</p>
-      </div>
-
-      <div class="compose-card">
-        <div class="cbiz">🎓 Academia</div>
-        <div class="compose-chips">
-          <span class="cchip core">Core</span>
-          <span class="cchip on">Education</span>
-        </div>
-        <p>Alumnos, cursos y certificaciones. Una pieza, hecha exactamente para esto.</p>
-      </div>
-
-      <div class="compose-card">
-        <div class="cbiz">🦷 Clínica dental</div>
-        <div class="compose-chips">
-          <span class="cchip core">Core</span>
-          <span class="cchip on">Healthcare</span>
-          <span class="cchip on">Services</span>
-        </div>
-        <p>Pacientes e historial clínico con Healthcare, combinado con agenda de horas de Services.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="diseno" class="diff">
+<section id="chile" class="diff">
   <div class="wrap">
     <div class="diff-grid">
       <div class="diff-text reveal-l">
-        <div class="tag">Cómo funciona por dentro</div>
-        <h2 class="h2">Mismas piezas, <span class="grad">combinación e identidad propias.</span></h2>
+        <div class="tag">No es un software importado traducido</div>
+        <h2 class="h2">Construido <span class="grad">para el SII.</span></h2>
         <p>
-          Los pilares —Commerce, Services, Business y los demás— son el motor: probado, estable,
-          el mismo para todos. Lo que cambia entre un cliente y otro es <strong>qué pilares activa</strong>
-          y el diseño visual completo de su panel y storefront. Dos negocios nuestros no operan igual,
-          ni se ven iguales.
+          Un software importado te sirve para gestionar clientes e inventario. Pero cuando tiene que 
+          <strong>facturar, declarar IVA y pagar sueldos en Chile</strong>, necesitas algo que hable 
+          el idioma del SII. LFXCORE está construido desde cero para la realidad chilena.
         </p>
         <ul class="check-list">
-          <li>
-            <span class="check-icon">✓</span>
-            <div>
-              <strong>Activas solo lo que necesitas</strong>
-              <span>Una ferretería no paga ni carga con el módulo de agenda que nunca usaría.</span>
-            </div>
-          </li>
-          <li>
-            <span class="check-icon">✓</span>
-            <div>
-              <strong>Creces agregando, no reescribiendo</strong>
-              <span>Si tu taller empieza a ofrecer mantención, activas Services — no migras de sistema.</span>
-            </div>
-          </li>
-          <li>
-            <span class="check-icon">✓</span>
-            <div>
-              <strong>Motor común, identidad propia</strong>
-              <span>Aprovechas pilares ya probados. El diseño visual de tu tienda o panel es exclusivo.</span>
-            </div>
-          </li>
+          <li><span class="check-icon">✓</span><div><strong>DTE directo al SII</strong><span>Firma P12, envío SOAP, track ID. Sin APIs de terceros. $0 por DTE.</span></div></li>
+          <li><span class="check-icon">✓</span><div><strong>Webpay Plus nativo</strong><span>60% del mercado de pagos online en Chile. Sin desarrollo a medida.</span></div></li>
+          <li><span class="check-icon">✓</span><div><strong>F29 automático</strong><span>Cálculo de IVA + XML + envío al SII. Sin errores de tipeo.</span></div></li>
+          <li><span class="check-icon">✓</span><div><strong>LCV (Libro de Compras/Ventas)</strong><span>Obligatorio mensual. Generación y envío al SII incluido.</span></div></li>
+          <li><span class="check-icon">✓</span><div><strong>Leyes laborales chilenas</strong><span>40 horas (Ley 21.561), finiquitos, vacaciones proporcionales.</span></div></li>
         </ul>
       </div>
 
       <div class="diff-visual reveal-r">
-        <div class="theme-stack">
-          <div class="theme-card theme-card-1">
-            <div class="theme-card-inner">
-              <div class="theme-tag">Repuestos · Servicio técnico</div>
-              <div class="theme-h">Taller NorteSur</div>
-              <div class="theme-grid">
-                <div class="theme-tile"></div><div class="theme-tile"></div>
-                <div class="theme-tile"></div><div class="theme-tile"></div>
-              </div>
-              <div class="theme-line"></div>
-            </div>
-          </div>
-          <div class="theme-card theme-card-2">
-            <div class="theme-card-inner">
-              <div class="theme-tag">B2B Industrial</div>
-              <div class="theme-h">NorteSteel</div>
-              <div class="theme-grid">
-                <div class="theme-tile"></div><div class="theme-tile"></div>
-                <div class="theme-tile"></div><div class="theme-tile"></div>
-              </div>
-              <div class="theme-line"></div>
-            </div>
-          </div>
-          <div class="theme-card theme-card-3">
-            <div class="theme-card-inner">
-              <div class="theme-tag">Barbería · Agenda</div>
-              <div class="theme-h">Studio Neon</div>
-              <div class="theme-grid">
-                <div class="theme-tile"></div><div class="theme-tile"></div>
-                <div class="theme-tile"></div><div class="theme-tile"></div>
-              </div>
-              <div class="theme-line"></div>
-            </div>
+        <div style="padding:28px;border:1px solid var(--bord2);border-radius:14px;background:var(--surface);">
+          <h4 style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;color:var(--cyan);letter-spacing:.15em;text-transform:uppercase;margin-bottom:18px;">LFXCORE vs otras plataformas</h4>
+          <div class="scale-table">
+            <div class="scale-row"><span>DTE (factura electrónica)</span><span style="color:var(--green);">✅ Integrado</span></div>
+            <div class="scale-row"><span>Webpay Plus</span><span style="color:var(--green);">✅ Nativo</span></div>
+            <div class="scale-row"><span>F29 (declaración IVA)</span><span style="color:var(--green);">✅ Automático</span></div>
+            <div class="scale-row"><span>LCV (libros SII)</span><span style="color:var(--green);">✅ Incluido</span></div>
+            <div class="scale-row"><span>40 horas (Ley 21.561)</span><span style="color:var(--green);">✅ Incluido</span></div>
+            <div class="scale-row"><span>Finiquitos chilenos</span><span style="color:var(--green);">✅ Automático</span></div>
+            <div class="scale-row"><span>RUT (módulo 11)</span><span style="color:var(--green);">✅ Validado</span></div>
+            <div class="scale-row"><span>Contabilidad NIIF + hash chain</span><span style="color:var(--green);">✅ Incluido</span></div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mercado" class="what" style="padding-top:50px;">
+  <div class="wrap">
+    <div class="tag reveal">Más barato que su stack actual</div>
+    <h2 class="h2 reveal">Reemplaza <span class="grad">contador + Excel + software.</span></h2>
+    <p class="lead reveal">
+      Una PYME chilena hoy paga contador externo ($100-250K), Excel ($0 pero sin automatización) 
+      y a veces un software de facturación o ERP (~$40-216K). LFXCORE reemplaza los tres desde 1.2 UF/mes.
+    </p>
+    <div class="compose-grid stagger" style="grid-template-columns:repeat(2,1fr);">
+      <div class="compose-card">
+        <div class="cbiz">📊 Microempresa</div>
+        <div class="compose-chips"><span class="cchip on">Micro Lite</span><span class="cchip">1.2 UF/mes</span></div>
+        <p>vs. software de facturación básico (~$40-50K, solo facturas, sin F29 ni LCV). LFXCORE: DTE + F29 + LCV + hash chain desde <strong style="color:var(--lilac);">1.2 UF/mes.</strong></p>
+      </div>
+      <div class="compose-card">
+        <div class="cbiz">🏗️ PYME (5-15 emp.)</div>
+        <div class="compose-chips"><span class="cchip on">Constructor</span><span class="cchip">4.5 UF/mes</span></div>
+        <p>vs. ERP tradicional (~$200K) + contador externo (~$150-200K). LFXCORE: DTE + F29 + LCV + proyectos + OT + bodegas + CRM desde <strong style="color:var(--lilac);">4.5 UF/mes.</strong></p>
+      </div>
+      <div class="compose-card">
+        <div class="cbiz">🛒 Comercio</div>
+        <div class="compose-chips"><span class="cchip on">Ferretero</span><span class="cchip">5.5 UF/mes</span></div>
+        <p>vs. plataformas e-commerce + ERP separados (~$125-500K) + Webpay a medida. LFXCORE: DTE + Webpay nativo + e-commerce + CRM + marketing + inventario desde <strong style="color:var(--lilac);">5.5 UF/mes.</strong></p>
+      </div>
+      <div class="compose-card">
+        <div class="cbiz">🏢 Empresa grande</div>
+        <div class="compose-chips"><span class="cchip on">Enterprise</span><span class="cchip">8.9 UF/mes</span></div>
+        <p>vs. ERP empresarial (~$400K+) + implementación + hardware. LFXCORE: 25 pilares, usuarios ilimitados, SLA 99.5% desde <strong style="color:var(--lilac);">8.9 UF/mes.</strong></p>
       </div>
     </div>
   </div>
@@ -894,242 +793,90 @@ footer{border-top:1px solid var(--border);padding:50px 0 30px;position:relative;
 
 <section id="proceso" class="proc">
   <div class="wrap">
-    <div class="tag reveal">Cómo trabajamos</div>
-    <h2 class="h2 reveal">De tu negocio a tu sistema, <span class="grad">en simple.</span></h2>
+    <div class="tag reveal">Empiece en días, no en meses</div>
+    <h2 class="h2 reveal">De su negocio a su ERP, <span class="grad">sin complicaciones.</span></h2>
     <p class="lead reveal">
-      Los pilares ya están construidos y probados. Lo que hacemos contigo es identificar
-      cuáles necesitas, diseñar la identidad visual y ponerlo en producción.
+      LFXCORE ya está construido y probado. El proceso es elegir su pack, configurar su empresa,
+      capacitar a su equipo y empezar a operar. Sin desarrollo a medida.
     </p>
     <div class="proc-grid stagger">
-      <div class="step">
-        <div class="step-num">01</div>
-        <h3>Levantamiento</h3>
-        <p>Conversamos tu negocio y detectamos qué pilares necesitas activar — y cuáles no.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">02</div>
-        <h3>Diseño</h3>
-        <p>Diseñamos la identidad visual de tu panel y storefront: paleta, tipografía, layout.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">03</div>
-        <h3>Despliegue</h3>
-        <p>Configuramos tu sistema en nuestra infraestructura, cargamos tus datos y conectamos pagos.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">04</div>
-        <h3>Operación</h3>
-        <p>Quedas operando con panel, soporte y mantención continua incluida.</p>
-      </div>
+      <div class="step"><div class="step-num">01</div><h3>Elija su pack</h3><p>9 packs por rubro. Hablamos 15 minutos, identificamos cuál se ajusta a su negocio.</p></div>
+      <div class="step"><div class="step-num">02</div><h3>Configuración</h3><p>Cargamos sus datos, configuramos su certificado P12 del SII, conectamos Webpay.</p></div>
+      <div class="step"><div class="step-num">03</div><h3>Capacitación</h3><p>1-2 horas de capacitación para su equipo. Video tutorial incluido en todos los packs.</p></div>
+      <div class="step"><div class="step-num">04</div><h3>Operación</h3><p>Facturando, cobrando y declarando impuestos. Con soporte incluido en tu mensualidad.</p></div>
     </div>
   </div>
 </section>
 
-<section id="plan" class="plan">
+<section id="packs" class="plan">
   <div class="wrap">
-    <div class="tag reveal">Plan a tu medida</div>
-    <h2 class="h2 reveal">Pagas por lo que activas, <span class="grad">no por todo el paquete.</span></h2>
+    <div class="tag reveal">Qué incluye cada pack</div>
+    <h2 class="h2 reveal">El núcleo <span class="grad">siempre incluido.</span></h2>
     <p class="lead reveal">
-      El precio depende de qué pilares activa tu negocio y cuánto los usas — no de un plan rígido
-      pensado para todos. Por eso no publicamos una tabla genérica: en una conversación de 15 minutos
-      vemos qué necesita tu negocio y te damos un número concreto.
+      Todos los packs comparten la misma base sólida. Los packs superiores agregan pilares 
+      específicos para cada industria. Sin costo por usuario adicional — paga por el pack, no por persona.
     </p>
 
     <div class="plan-box reveal-scale">
       <div class="plan-head">
         <div>
-          <div class="plan-title-row">
-            <div class="plan-title">Cómo se forma tu precio</div>
-            <span class="badge">Sin contratos a plazo</span>
-          </div>
-          <p class="plan-sub">
-            Una base según los pilares que activas, más un componente variable según tu uso real.
-            Empiezas con poco y creces agregando, sin pagar de más desde el día uno.
-          </p>
+          <div class="plan-title-row"><div class="plan-title">Núcleo incluido en TODOS los packs</div><span class="badge">Sin excepciones</span></div>
+          <p class="plan-sub">Lo que toda empresa chilena necesita para operar legalmente, en todos los packs desde Micro Lite.</p>
         </div>
       </div>
-
       <div class="plan-body">
-
         <div class="plan-features">
-          <h4>Lo que define tu precio</h4>
+          <h4>Finanzas, DTE y cumplimiento</h4>
           <ul>
-            <li>Qué pilares activas (Commerce, Services, Business, y los demás)</li>
-            <li>Cuánto los usas: volumen de órdenes, citas, proyectos o transacciones</li>
-            <li>Hosting, servidor, base de datos y soporte, siempre incluidos</li>
-            <li>Sin costos ocultos ni sorpresas en la mensualidad</li>
+            <li>Plan de cuentas NIIF + asientos contables de partida doble</li>
+            <li>Hash chain SHA-256 inmutable (contabilidad auditable)</li>
+            <li>Facturación electrónica: facturas, boletas, NC, ND</li>
+            <li>Firma P12 + envío SOAP directo al SII (sin APIs de terceros)</li>
+            <li>F29 automático: cálculo IVA + generación XML + envío</li>
+            <li>LCV: Libro de Compras/Ventas obligatorio mensual</li>
+            <li>CxC/CxP, activos fijos, depreciación, tesorería</li>
           </ul>
         </div>
-
-        <div class="plan-scaling">
-          <h4>Por qué no hay tabla pública</h4>
-          <p style="margin-top:0;padding-top:0;border-top:none;">
-            Un negocio que solo vende productos y uno que vende y agenda mantenciones no deberían
-            pagar la misma fórmula. Preferimos conversar tu caso real antes que ofrecerte un número
-            que no te calza — para arriba o para abajo.
-          </p>
+        <div class="plan-features">
+          <h4>Pagos, operación y admin</h4>
+          <ul>
+            <li>Webpay Plus nativo (sin desarrollo a medida)</li>
+            <li>Khipu + MercadoPago + Stripe incluidos</li>
+            <li>Catálogo de productos, precios, pedidos, cotizaciones</li>
+            <li>Normativa Chilena: calendario SII, tablas oficiales, leyes laborales</li>
+            <li>Admin Panel con dashboard, KPIs, 10 temas, responsive</li>
+            <li>2FA, CSRF, rate limiting, RLS por tenant</li>
+          </ul>
         </div>
-
       </div>
-
       <div class="plan-foot">
-        <div class="plan-foot-note">// Sin contratos a plazo: cancelas cuando quieras. El código de tu sistema es tuyo.</div>
-        <div class="plan-foot-actions">
-          <a href="https://wa.me/56935078422?text=Hola%2C%20quiero%20conversar%20sobre%20LFXCORE%20para%20mi%20negocio" target="_blank" rel="noopener" class="btn-p"><span>Conversemos →</span></a>
-        </div>
+        <div class="plan-foot-note">// Sin permanencia forzosa. Sin costo por usuario adicional. Si creces, subis de pack pagando solo la diferencia.</div>
+        <div class="plan-foot-actions"><a href="#precios" class="btn-p"><span>Ver todos los precios →</span></a></div>
       </div>
     </div>
 
     <div class="future-card reveal">
-      <div class="future-card-left">
-        <h4>Nuevos pilares en construcción</h4>
-        <p>Services, Business y el resto se siguen ampliando. Mismo modelo: activas solo lo que necesitas.</p>
-      </div>
-      <span class="future-tag">En desarrollo</span>
+      <div class="future-card-left"><h4>¿Viene de otro sistema de facturación o ERP?</h4><p>Primeros 2 meses gratis por migración. Le ayudamos con la transición de datos.</p></div>
+      <span class="future-tag">2 meses gratis</span>
     </div>
-
   </div>
 </section>
-
-
 
 <section id="faq" class="faq">
   <div class="wrap">
     <div class="tag reveal">Preguntas frecuentes</div>
-    <h2 class="h2 reveal">Lo que la gente <span class="grad">suele preguntar.</span></h2>
-    <p class="lead reveal">Si no encuentras tu respuesta, escríbenos directamente por WhatsApp.</p>
+    <h2 class="h2 reveal">Lo que todo dueño de empresa <span class="grad">necesita saber.</span></h2>
+    <p class="lead reveal">Si no encuentras tu respuesta, escríbanos directamente por WhatsApp.</p>
 
     <div class="faq-list reveal">
-
-      <div class="faq-item">
-        <button type="button" class="faq-q" onclick="toggleFaq(this)">
-          ¿Qué es exactamente un "pilar"?
-          <span class="faq-arrow">⌄</span>
-        </button>
-        <div class="faq-a">
-          <div class="faq-a-inner">
-            Es una capacidad completa de negocio: Commerce resuelve comprar/vender, Services resuelve
-            agendar y cobrar trabajos, Business resuelve clientes y proyectos. Cada pilar está construido
-            y probado de antemano. Tu negocio activa solo los pilares que necesita — no pagas ni cargas
-            con los que no usarías nunca.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button type="button" class="faq-q" onclick="toggleFaq(this)">
-          ¿Puedo activar más de un pilar a la vez?
-          <span class="faq-arrow">⌄</span>
-        </button>
-        <div class="faq-a">
-          <div class="faq-a-inner">
-            Sí, y es habitual. Un taller mecánico activa Commerce (vende repuestos) y Services
-            (agenda mantenciones) al mismo tiempo. Los pilares conviven en el mismo sistema sin
-            que tengas que administrar dos plataformas distintas.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button type="button" class="faq-q" onclick="toggleFaq(this)">
-          ¿El diseño de mi panel y mi tienda será único o usan plantillas?
-          <span class="faq-arrow">⌄</span>
-        </button>
-        <div class="faq-a">
-          <div class="faq-a-inner">
-            El diseño visual es 100% único. Lo que se reutiliza entre clientes son los pilares —el motor
-            de cada capacidad de negocio—, porque son funcionalidades ya probadas y estables. La identidad
-            visual —colores, tipografía, layout, tono— se construye específicamente para tu marca.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button type="button" class="faq-q" onclick="toggleFaq(this)">
-          ¿Por qué no publican una tabla de precios?
-          <span class="faq-arrow">⌄</span>
-        </button>
-        <div class="faq-a">
-          <div class="faq-a-inner">
-            Porque tu precio depende de qué pilares activas y cuánto los usas — no es lo mismo
-            un negocio que solo vende productos que uno que además agenda trabajos. Una tabla
-            genérica te haría pagar de más o quedarte corto. Preferimos conversar tu caso real
-            en 15 minutos y darte un número que sí te calce.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button type="button" class="faq-q" onclick="toggleFaq(this)">
-          ¿Cuánto demora estar en línea?
-          <span class="faq-arrow">⌄</span>
-        </button>
-        <div class="faq-a">
-          <div class="faq-a-inner">
-            Días, no meses, para los pilares ya construidos. Como el motor de cada pilar ya existe,
-            el trabajo se concentra en el levantamiento, el diseño visual y la configuración.
-            En la reunión inicial te damos un plazo concreto según qué pilares necesitas.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button type="button" class="faq-q" onclick="toggleFaq(this)">
-          ¿Qué incluye exactamente la mensualidad?
-          <span class="faq-arrow">⌄</span>
-        </button>
-        <div class="faq-a">
-          <div class="faq-a-inner">
-            Todo lo necesario para operar: hosting del sitio, servidor backend activo, base de datos,
-            respaldos, monitoreo, mantención del sistema, actualizaciones de seguridad y soporte técnico.
-            No tienes que contratar nada técnico por separado.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button type="button" class="faq-q" onclick="toggleFaq(this)">
-          ¿Puedo agregar un pilar nuevo más adelante?
-          <span class="faq-arrow">⌄</span>
-        </button>
-        <div class="faq-a">
-          <div class="faq-a-inner">
-            Sí — es justamente la idea. Si hoy solo necesitas Commerce y en seis meses empiezas a
-            ofrecer servicios agendados, activas Services sobre el mismo sistema. No migras de
-            plataforma ni partes de cero. Si necesitas algo muy específico de tu rubro, también
-            evaluamos extensiones a medida sobre los pilares existentes.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button type="button" class="faq-q" onclick="toggleFaq(this)">
-          ¿Qué necesito tener listo para empezar?
-          <span class="faq-arrow">⌄</span>
-        </button>
-        <div class="faq-a">
-          <div class="faq-a-inner">
-            Idealmente: claridad sobre qué hace tu negocio día a día, logo y colores de marca
-            (si los tienes), y una idea de qué necesitas gestionar primero. Si no tienes todo
-            definido, te ayudamos a aterrizarlo en la primera conversación.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button type="button" class="faq-q" onclick="toggleFaq(this)">
-          ¿Qué pasa si cancelo la mensualidad?
-          <span class="faq-arrow">⌄</span>
-        </button>
-        <div class="faq-a">
-          <div class="faq-a-inner">
-            Puedes cancelar en cualquier momento, sin contratos a plazo. Si cancelas, tu sistema deja de
-            estar activo en nuestra infraestructura, pero el código del proyecto es tuyo y puedes
-            llevarlo a otro proveedor si lo deseas.
-          </div>
-        </div>
-      </div>
-
+      <div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)">¿Cómo funciona la facturación electrónica (DTE)?<span class="faq-arrow">⌄</span></button><div class="faq-a"><div class="faq-a-inner">LFXCORE se conecta directo al SII vía SOAP — sin APIs de terceros. Sube su certificado P12 (el mismo que usa en el portal del SII), y el sistema firma y envía sus DTE automáticamente. Recibe el Track ID y el estado en tiempo real. Cada DTE le sale $0 (sin costo por documento, a diferencia de otras soluciones que cobran $10-30 CLP por cada uno).</div></div></div>
+      <div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)">¿Webpay Plus viene incluido o hay que desarrollarlo?<span class="faq-arrow">⌄</span></button><div class="faq-a"><div class="faq-a-inner">Viene incluido en todos los packs. Webpay Plus está integrado nativamente — no necesita desarrollarlo ni contratar a nadie. En ambiente de pruebas usa el sandbox gratuito de Transbank. Para producción necesita su contrato de comercio con Transbank (le ayudamos con el trámite).</div></div></div>
+      <div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)">¿El F29 se declara solo?<span class="faq-arrow">⌄</span></button><div class="faq-a"><div class="faq-a-inner">LFXCORE calcula el IVA débito y crédito automáticamente desde sus DTE emitidos y recibidos, genera el XML del F29 y lo envía al SII. Lo único que tiene que hacer es revisarlo y confirmar. Sin planillas de Excel, sin errores de tipeo.</div></div></div>
+      <div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)">¿Cuánto demora estar operando?<span class="faq-arrow">⌄</span></button><div class="faq-a"><div class="faq-a-inner">Días, no meses. El sistema ya está construido y probado. La implementación Micro es $0 (autogestionada con video tutorial). Los packs medios tienen implementación desde $50.000. Elige su pack, carga su certificado P12, configura su empresa, recibe 1-2 horas de capacitación, y empieza.</div></div></div>
+      <div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)">¿Qué pasa si mi empresa crece y necesito más funciones?<span class="faq-arrow">⌄</span></button><div class="faq-a"><div class="faq-a-inner">Sube de pack pagando solo la diferencia de UF. Sin penalización, sin cargos sorpresa. Si hoy tiene Micro (1.8 UF) y necesita Constructor (4.5 UF), solo paga 2.7 UF adicionales. Sus datos y configuraciones se mantienen intactos.</div></div></div>
+      <div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)">¿Necesito un contador igual?<span class="faq-arrow">⌄</span></button><div class="faq-a"><div class="faq-a-inner">LFXCORE automatiza la contabilidad, la facturación y las declaraciones, pero no reemplaza el criterio de un contador para decisiones estratégicas. Lo que sí hace es eliminar las horas de trabajo manual (cuadrar IVA, llenar F29, generar LCV, tipear facturas). Muchos clientes reducen su gasto en contador externo porque el sistema ya hace el 80% del trabajo pesado.</div></div></div>
+      <div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)">¿Puedo migrar desde otro sistema de facturación o ERP?<span class="faq-arrow">⌄</span></button><div class="faq-a"><div class="faq-a-inner">Sí. Le damos 2 meses gratis para que la migración no le cueste mientras hace la transición. Le ayudamos a exportar sus datos del sistema actual e importarlos en LFXCORE. El proceso toma días, no semanas.</div></div></div>
+      <div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)">¿Qué incluye exactamente la mensualidad?<span class="faq-arrow">⌄</span></button><div class="faq-a"><div class="faq-a-inner">Todo: hosting, servidor, base de datos, respaldos, monitoreo 24/7, actualizaciones de seguridad, soporte técnico, y todas las funcionalidades de su pack. No hay costos ocultos. No se cobra por usuario extra. No hay cargos por transacción.</div></div></div>
     </div>
   </div>
 </section>
@@ -1137,17 +884,11 @@ footer{border-top:1px solid var(--border);padding:50px 0 30px;position:relative;
 <section id="contacto" class="cta">
   <div class="wrap">
     <div class="cta-box reveal-scale">
-      <h2>¿Listo para activar el sistema <span class="grad">que tu negocio realmente necesita?</span></h2>
-      <p>
-        Conversemos sin compromiso. En la primera llamada vemos qué pilares te sirven y definimos plazos y siguiente paso.
-      </p>
+      <h2>¿Listo para dejar de pelear <span class="grad">con el SII y el Excel?</span></h2>
+      <p>Hablemos 15 minutos sin compromiso. Le ayudamos a identificar qué pack se ajusta a su negocio.</p>
       <div class="cta-btns">
-        <a href="#plan" class="btn-p"><span>Ver plan →</span></a>
-        <a class="wa-btn"
-           href="https://wa.me/56935078422?text=Hola%2C%20quiero%20conversar%20sobre%20LogicForgeX"
-           target="_blank" rel="noopener">
-          💬 WhatsApp directo
-        </a>
+        <a href="#precios" class="btn-p"><span>Ver precios →</span></a>
+        <a class="wa-btn" href="https://wa.me/56935078422?text=Hola%2C%20quiero%20conversar%20sobre%20LFXCORE%20para%20mi%20negocio" target="_blank" rel="noopener">💬 WhatsApp directo</a>
       </div>
     </div>
   </div>
@@ -1158,30 +899,28 @@ footer{border-top:1px solid var(--border);padding:50px 0 30px;position:relative;
 <footer>
   <div class="foot-inner">
     <div class="foot-brand">
-      <div class="foot-logo">
-        <span class="dot"></span>
-        LogicForgeX
-      </div>
-      <p>Plataforma empresarial modular: activa solo los pilares que tu negocio necesita.</p>
+      <div class="foot-logo"><span class="dot"></span>LogicForgeX<span class="x">.cl</span></div>
+      <p>ERP chileno. Facturación electrónica directo al SII, Webpay, F29, LCV y 25 pilares de negocio.</p>
     </div>
     <nav class="foot-nav">
       <ul>
         <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#pilares">Pilares</a></li>
-        <li><a href="#diseno">Cómo funciona</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#chile">¿Por qué Chile?</a></li>
+        <li><a href="#packs">Packs</a></li>
         <li><a href="#proceso">Proceso</a></li>
-        <li><a href="#plan">Plan</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
     </nav>
   </div>
   <div class="foot-bottom">
     <p class="foot-copy">© 2026 LogicForgeX. Todos los derechos reservados.</p>
-    <p class="foot-tag">// <span class="grad">Powered by LFXCore</span></p>
+    <p class="foot-tag">// <span class="grad">Powered by LFXCORE v10</span></p>
   </div>
 </footer>
 
 <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">↑</button>
+
 
 <script>
 const ham     = document.getElementById('ham');
@@ -1299,7 +1038,7 @@ if (sideItems.length > 0){
     sideItems[sideIdx].classList.add('active');
   }, 2800);
 }
-</script>
 
+</script>
 </body>
 </html>
