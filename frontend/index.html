@@ -285,7 +285,7 @@ section + section{padding-top:0;}
 
 /* PILLARS GRID */
 .pillars{padding-top:40px;}
-.pillars-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px;}
+.pillars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px;}
 .pillars-grid.row2{grid-template-columns:repeat(3,1fr);max-width:78%;margin:16px auto 0;}
 .pillar-card{position:relative;padding:24px 20px;background:linear-gradient(180deg,var(--surface),var(--bg2));border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:all .4s var(--easing);}
 .pillar-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--violet),transparent);opacity:.5;transition:opacity .4s var(--easing);}
@@ -299,17 +299,12 @@ section + section{padding-top:0;}
 .pillar-card.core-note .pdesc{margin:0;flex:1;}
 
 @media (max-width:840px){
-  .pillars-grid{grid-template-columns:repeat(2,1fr);gap:12px;}
-  .pillars-grid.row2{grid-template-columns:repeat(2,1fr);max-width:100%;}
-  .pillar-card{padding:20px 16px;}
+  .pillars-grid{grid-template-columns:1fr!important;gap:12px;}
+  .pillars-grid.row2{max-width:100%;}
+  .pillar-card{padding:18px 16px;text-align:left;}
+  .pillar-card .picon{font-size:22px;margin-bottom:8px;}
+  .pillar-card .pdesc{word-break:break-word;}
   .pillar-card.core-note{flex-direction:column;text-align:left;align-items:flex-start;}
-}
-@media (max-width:460px){
-  .pillars-grid{grid-template-columns:1fr;gap:10px;}
-  .pillars-grid.row2{grid-template-columns:1fr;}
-  .pillar-card{display:flex;align-items:center;gap:14px;padding:16px;text-align:left;}
-  .pillar-card .picon{margin-bottom:0;font-size:22px;}
-  .pillar-card .pname{margin-bottom:2px;}
 }
 
 /* COMPOSE EXAMPLES */
@@ -324,11 +319,8 @@ section + section{padding-top:0;}
 .cchip.ext{background:transparent;border-style:dashed;color:var(--dim);}
 .compose-card p{color:var(--muted);font-size:13.5px;line-height:1.6;}
 
-@media (max-width:1024px){
-  .compose-grid{grid-template-columns:repeat(2,1fr)!important;}
-}
-@media (max-width:640px){
-  .compose-grid{grid-template-columns:1fr!important;gap:14px;}
+@media (max-width:840px){
+  .compose-grid,.compose-grid[style]{grid-template-columns:1fr!important;gap:16px;}
 }
 
 /* WHAT */
@@ -724,17 +716,17 @@ footer{border-top:1px solid var(--border);padding:50px 0 30px;position:relative;
       <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--dim);">* Los precios son en UF. Se factura en UF del día. La conversión a CLP varía según el valor de la UF al momento del pago.</span>
     </p>
 
-    <div class="pillars-grid stagger" style="grid-template-columns:repeat(3,1fr);">
+    <div class="pillars-grid stagger">
       <div class="pillar-card"><span class="picon">🥇</span><div class="pname">Micro Lite</div><div class="pdesc">Solo facturar. DTE + F29 automático.<br><strong style="color:var(--cyan);">1.2 UF</strong></div></div>
       <div class="pillar-card"><span class="picon">🥈</span><div class="pname">Micro</div><div class="pdesc">Emprendedor. DTE + F29 + CRM.<br><strong style="color:var(--cyan);">1.8 UF</strong></div></div>
       <div class="pillar-card"><span class="picon">🏢</span><div class="pname">Inmobiliario</div><div class="pdesc">Propiedades, contratos, arriendos.<br><strong style="color:var(--cyan);">4.0 UF</strong></div></div>
     </div>
-    <div class="pillars-grid stagger" style="grid-template-columns:repeat(3,1fr);margin-top:0;">
+    <div class="pillars-grid stagger" style="margin-top:0;">
       <div class="pillar-card"><span class="picon">💰</span><div class="pname">Cobranza</div><div class="pdesc">Factoring, deudores, convenios.<br><strong style="color:var(--cyan);">4.0 UF</strong></div></div>
       <div class="pillar-card"><span class="picon">🏗️</span><div class="pname">Constructor</div><div class="pdesc">Proyectos, OT, bodegas, SLA.<br><strong style="color:var(--cyan);">4.5 UF</strong></div></div>
       <div class="pillar-card"><span class="picon">🏥</span><div class="pname">Clínica</div><div class="pdesc">Pacientes, citas, ficha clínica.<br><strong style="color:var(--cyan);">4.5 UF</strong></div></div>
     </div>
-    <div class="pillars-grid stagger" style="grid-template-columns:repeat(3,1fr);margin-top:0;">
+    <div class="pillars-grid stagger" style="margin-top:0;">
       <div class="pillar-card"><span class="picon">🎓</span><div class="pname">Instituto</div><div class="pdesc">Cursos, estudiantes, matrículas.<br><strong style="color:var(--cyan);">4.5 UF</strong></div></div>
       <div class="pillar-card"><span class="picon">🛒</span><div class="pname">Ferretero</div><div class="pdesc">Tienda, retail, e-commerce.<br><strong style="color:var(--cyan);">5.5 UF</strong></div></div>
       <div class="pillar-card"><span class="picon">🏭</span><div class="pname">Industrial</div><div class="pdesc">Fábrica, CMMS, EHS, QMS.<br><strong style="color:var(--cyan);">5.5 UF</strong></div></div>
@@ -755,9 +747,16 @@ footer{border-top:1px solid var(--border);padding:50px 0 30px;position:relative;
         <div class="tag">No es un software importado traducido</div>
         <h2 class="h2">Para que el SII <span class="grad">no le quite el sueño.</span></h2>
         <p>
-          Un software importado te sirve para gestionar clientes e inventario. Pero cuando tiene que 
-          <strong>facturar, declarar IVA y pagar sueldos en Chile</strong>, necesitas algo que hable 
-          el idioma del SII. LFXCORE está construido desde cero para la realidad chilena.
+          Todo dueño de PYME en Chile conoce esa sensación: se acerca el día 12, y aunque haya trabajado 
+          bien todo el mes, algo aprieta el pecho. ¿Cuadró el IVA? ¿Se le pasó una factura? ¿El contador 
+          alcanza a declarar a tiempo? Esa ansiedad no es suya por desordenado — es porque nadie le construyó 
+          una herramienta pensada para <strong>su</strong> realidad.
+        </p>
+        <p>
+          Un software importado le sirve para gestionar clientes e inventario. Pero cuando tiene que 
+          <strong>facturar, declarar IVA y pagar sueldos en Chile</strong>, necesita algo que hable 
+          el idioma del SII. LFXCORE está construido desde cero para la realidad chilena, no traducido 
+          ni adaptado a la fuerza.
         </p>
         <ul class="check-list">
           <li><span class="check-icon">✓</span><div><strong>DTE directo al SII</strong><span>Firma P12, envío SOAP, track ID. Sin APIs de terceros. $0 por DTE.</span></div></li>
@@ -825,13 +824,15 @@ footer{border-top:1px solid var(--border);padding:50px 0 30px;position:relative;
     <div class="tag reveal">Empiece en días, no en meses</div>
     <h2 class="h2 reveal">De su negocio a su sistema, <span class="grad">sin dolores de cabeza.</span></h2>
     <p class="lead reveal">
-      LFXCORE ya está construido y probado. El proceso es simple: elige su pack, configura su empresa, recibe una capacitación y empieza a operar. Sin desarrollo, sin sorpresas.
+      LFXCORE ya está construido y probado — no le vamos a pedir meses de espera ni un equipo de 
+      desarrollo. El proceso es simple: elige su pack, configura su empresa, recibe una capacitación 
+      y empieza a operar. Sin desarrollo, sin sorpresas, sin promesas vacías.
     </p>
     <div class="proc-grid stagger">
       <div class="step"><div class="step-num">01</div><h3>Elija su pack</h3><p>9 packs por rubro. Hablamos 15 minutos, identificamos cuál se ajusta a su negocio.</p></div>
       <div class="step"><div class="step-num">02</div><h3>Configuración</h3><p>Cargamos sus datos, configuramos su certificado P12 del SII, conectamos Webpay.</p></div>
       <div class="step"><div class="step-num">03</div><h3>Capacitación</h3><p>1-2 horas de capacitación para su equipo. Video tutorial incluido en todos los packs.</p></div>
-      <div class="step"><div class="step-num">04</div><h3>Operación</h3><p>Facturando, cobrando y declarando impuestos. Con soporte incluido en tu mensualidad.</p></div>
+      <div class="step"><div class="step-num">04</div><h3>Operación</h3><p>Facturando, cobrando y declarando impuestos. Con soporte incluido en su mensualidad.</p></div>
     </div>
   </div>
 </section>
@@ -912,7 +913,7 @@ footer{border-top:1px solid var(--border);padding:50px 0 30px;position:relative;
   <div class="wrap">
     <div class="cta-box reveal-scale">
       <h2>¿Listo para dormir tranquilo <span class="grad">los días 12 de cada mes?</span></h2>
-      <p>Hablemos 15 minutos sin compromiso. Le ayudamos a encontrar el pack que ordena su empresa y le devuelve tiempo.</p>
+      <p>Hablemos 15 minutos sin compromiso. Le ayudamos a encontrar el pack que ordena su empresa y le devuelve tiempo. Sin permanencia forzosa: si no es para usted, se va cuando quiera.</p>
       <div class="cta-btns">
         <a href="#precios" class="btn-p"><span>Ver precios →</span></a>
         <a class="wa-btn" href="https://wa.me/56935078422?text=Hola%2C%20quiero%20conversar%20sobre%20LFXCORE%20para%20mi%20negocio" target="_blank" rel="noopener">💬 WhatsApp directo</a>
